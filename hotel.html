@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<title >Hotel From</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <style >
+         body{
+             background-color : #480618;
+             font-family: "Montserrat", sans-serif;
+             color: #f7e8e8;
+         }
+         h1, h2, h3 {
+             font-family: "Cormorant Garamond", Georgia, serif;
+         }
+         h1 {
+             font-size: 48px;
+             font-weight: 700;
+             letter-spacing: 1px;
+         }
+         h2 {
+             font-size: 32px;
+             font-weight: 600;
+         }
+         h3 {
+             font-size: 24px;
+             font-weight: 600;
+         }
+         input {
+    background-color: #572c2f;
+    color: #f7e8e8;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 4px solid #000000;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+select {
+    background-color: #572c2f;
+    color: #f7e8e8;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 4px solid #000000;
+    border-radius: 6px;
+}
+     </style>
+
+    <title>Evergreen Roses Hotel Form</title>
+</head>
+
+<body>
+
+    <h1>Evergreen Roses Hotel Form</h1>
+
+    <h2>Answer the following questions</h2>
+
+    <form>
+
+        <h3>
+            <label for="firstName">First Name:</label>
+            <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First name"
+            >
+
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last name"
+            >
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+            >
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+            >
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+            >
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+            >
+        </h3>
+
+        <h2>Select your gender:</h2>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <br>
+
+        <input type="radio" id="ratherNotSay" name="gender" value="Rather not say">
+        <label for="ratherNotSay">Rather not say</label>
+
+        <br><br>
+
+        <h3>
+            The following are the room classes and their corresponding
+            prices per night.
+        </h3>
+
+        <h3>
+            Please choose a room class and input the number of nights
+            you will be spending here.
+        </h3>
+
+        <label for="roomClass"><h3>Room Class:</h3></label>
+
+        <select name="roomClass" id="roomClass">
+
+            <option value="50000">First Class - N50,000</option>
+            <option value="42500">Executive - N42,500</option>
+            <option value="30000">Middle Class - N30,000</option>
+            <option value="15000">Economic - N15,000</option>
+            <option value="8000">Management - N8,000</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="nights"><h3>Number of nights:</h3></label>
+
+        <input
+            type="number"
+            id="nights"
+            name="nights"
+            min="1"
+            placeholder="Number of nights"
+        >
+
+        <br><br>
+
+        <h2>Select the facilities you would like to use during your stay.</h2>
+
+        <input type="checkbox" id="pool" name="facilities" value="Swimming Pool">
+        <label for="pool">Swimming Pool</label>
+
+        <br><br>
+
+        <input type="checkbox" id="library" name="facilities" value="Library">
+        <label for="library">Library</label>
+
+        <br><br>
+
+        <input type="checkbox" id="conference" name="facilities" value="Conference Room">
+        <label for="conference">Conference Room</label>
+
+        <br><br>
+
+        <input type="checkbox" id="restaurant" name="facilities" value="Bar and Restaurant">
+        <label for="restaurant">Bar and Restaurant</label>
+
+        <br><br>
+
+        <input type="checkbox" id="gym" name="facilities" value="Gymnasium">
+        <label for="gym">Gymnasium</label>
+
+        <br><br>
+
+        <input type="checkbox" id="amusement" name="facilities" value="Amusement Centre">
+        <label for="amusement">Amusement Centre</label>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <h3>
+        Details on this website are in the hotel brochure.<br>
+        We will get back to you within an hour after submitting this form.
+        Thank you!
+    </h3>
+
+    <a href="Hotel brochure.html">Hotel Brochure</a>
+
+    <h3>Enjoy your stay!</h3>
+
+    <a href="hotel_feedback_form.html">
+        We would like to know how good our services are.
+        Click here to fill in a feedback form.
+    </a>
+
+</body>
+
+</html>
